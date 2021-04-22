@@ -21,7 +21,6 @@
       {% if i.completed %}
         <tr class="table-success font-italic">
           <td class="striker"><a href="{% url 'edit' i.id %}">{{ i.item }}</a></td>
-          <!-- <td><center>{{i.completed}}</center></td> -->
           <td><center><a href="{% url 'uncross_off' i.id %}">Uncross</a></center></td>
           <td><center><a href="{% url 'delete' i.id %}">Delete</a></center></td>
         </tr>
